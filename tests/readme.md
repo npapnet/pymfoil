@@ -1,0 +1,1 @@
+This folder will contain pytests for pymfoil.
