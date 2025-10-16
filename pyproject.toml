@@ -8,7 +8,7 @@
 # are other popular alternatives.
 # ==============================================================================
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=68.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 
@@ -20,6 +20,8 @@ build-backend = "setuptools.build_meta"
 # ==============================================================================
 [project]
 name = "pymfoil"
+# version = "0.0.1"  # Add this placeholder version
+dynamic = ["version"]
 authors = [
   {name = "N. Papadakis", email = "npapnet@gmail.com"},
 ]
@@ -98,7 +100,16 @@ test = ["pytest"]
 [tool.setuptools]
 # This automatically finds your packages, assuming you have a `src/pymfoil`
 # or `pymfoil` directory structure.
-packages = { find = {} }
+# packages = { find = {} }
+packages = ["pymfoil"]
+
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+
+[tool.setuptools.dynamic]
+version = {attr = "pymfoil.__version__"}
 
 
 # # --- Ruff Linter/Formatter Configuration ---
@@ -135,7 +146,3 @@ testpaths = [
 # warn_return_any = true
 # warn_unused_configs = true
 
-
-
-[tool.setuptools.dynamic]
-version = {attr = "pymfoil.__version__"}
