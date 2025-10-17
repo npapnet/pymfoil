@@ -5,7 +5,7 @@ on:
   push:
     branches:
       - main # Replace with your default branch if it's not 'main'
-      - develop
+      # - develop
 
 # BEST PRACTICE: Specify permissions for the GITHUB_TOKEN to ensure the workflow is secure.
 permissions:
