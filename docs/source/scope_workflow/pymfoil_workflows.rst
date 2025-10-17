@@ -53,3 +53,6 @@ Currently :
 
 Overview for GUI
 ----------------
+
+.. warning:: 
+    Work in progress. The GUI is under development and not yet functional.

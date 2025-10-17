@@ -3,7 +3,11 @@ pymfoil
 
 .. toctree::
    :maxdepth: 4
+   
+   pymfoil
 
-   pymfoil 
+   
 
-Work in progress
+Work in progress.
+
+

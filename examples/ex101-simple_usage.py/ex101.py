@@ -2,7 +2,7 @@
 '''
 # Example 101: Simple usage
 
-This HAS NOT BEEN TESTED YET
+tests for a NACA4415 airfoil at alpha = 2.5 degrees and plots the output
 '''
 
 #%%[code]

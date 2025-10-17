@@ -9,10 +9,11 @@ Welcome to pymfoil's (v |version|) documentation!
    introduction
    install
    usage
-   pymfoil/index
+   scope_workflow/index
    tutorials/index
-   modules_old
+   api/index
    api/modules
+   api/pymfoil
 
 .. note::
 
