@@ -31,6 +31,7 @@ jobs:
           python-version: '3.x'
 
       - name: Install Dependencies
+        working-directory: ${{ github.workspace }}
         run: |
           python -m pip install --upgrade pip
           # BEST PRACTICE: It's recommended to have a requirements.txt for your docs
