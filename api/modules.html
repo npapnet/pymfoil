@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>pymfoil &#8212; pymfoil 0.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css?v=27fed22d" />
+    <script src="../_static/documentation_options.js?v=7026087e"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="pymfoil package" href="pymfoil.html" />
+    <link rel="prev" title="API Reference" href="index.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="pymfoil">
+<h1>pymfoil<a class="headerlink" href="#pymfoil" title="Link to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="pymfoil.html">pymfoil package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pymfoil.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pymfoil.html#module-pymfoil.mfoil">pymfoil.mfoil module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.Geom"><code class="docutils literal notranslate"><span class="pre">Geom</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.Glob"><code class="docutils literal notranslate"><span class="pre">Glob</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.Isol"><code class="docutils literal notranslate"><span class="pre">Isol</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.Oper"><code class="docutils literal notranslate"><span class="pre">Oper</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.Panel"><code class="docutils literal notranslate"><span class="pre">Panel</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.Param"><code class="docutils literal notranslate"><span class="pre">Param</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.Post"><code class="docutils literal notranslate"><span class="pre">Post</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.TE_info"><code class="docutils literal notranslate"><span class="pre">TE_info()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.Vsol"><code class="docutils literal notranslate"><span class="pre">Vsol</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.atan2"><code class="docutils literal notranslate"><span class="pre">atan2()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.build_gamma"><code class="docutils literal notranslate"><span class="pre">build_gamma()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.build_glob_sys"><code class="docutils literal notranslate"><span class="pre">build_glob_sys()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.build_param"><code class="docutils literal notranslate"><span class="pre">build_param()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.build_wake"><code class="docutils literal notranslate"><span class="pre">build_wake()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.calc_force"><code class="docutils literal notranslate"><span class="pre">calc_force()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.calc_ue_m"><code class="docutils literal notranslate"><span class="pre">calc_ue_m()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.check_ping"><code class="docutils literal notranslate"><span class="pre">check_ping()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.clalpha_residual"><code class="docutils literal notranslate"><span class="pre">clalpha_residual()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.clear_solution"><code class="docutils literal notranslate"><span class="pre">clear_solution()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.cosd"><code class="docutils literal notranslate"><span class="pre">cosd()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.dist"><code class="docutils literal notranslate"><span class="pre">dist()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.get_H"><code class="docutils literal notranslate"><span class="pre">get_H()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.get_Hk"><code class="docutils literal notranslate"><span class="pre">get_Hk()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.get_Hs"><code class="docutils literal notranslate"><span class="pre">get_Hs()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.get_Hss"><code class="docutils literal notranslate"><span class="pre">get_Hss()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.get_Hw"><code class="docutils literal notranslate"><span class="pre">get_Hw()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.get_Mach2"><code class="docutils literal notranslate"><span class="pre">get_Mach2()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.get_Ret"><code class="docutils literal notranslate"><span class="pre">get_Ret()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.get_Us"><code class="docutils literal notranslate"><span class="pre">get_Us()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.get_cDi"><code class="docutils literal notranslate"><span class="pre">get_cDi()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.get_cDi_lam"><code class="docutils literal notranslate"><span class="pre">get_cDi_lam()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.get_cDi_lamstress"><code class="docutils literal notranslate"><span class="pre">get_cDi_lamstress()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.get_cDi_lamwake"><code class="docutils literal notranslate"><span class="pre">get_cDi_lamwake()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.get_cDi_outer"><code class="docutils literal notranslate"><span class="pre">get_cDi_outer()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.get_cDi_turbwall"><code class="docutils literal notranslate"><span class="pre">get_cDi_turbwall()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.get_cDixt"><code class="docutils literal notranslate"><span class="pre">get_cDixt()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.get_cdutstag"><code class="docutils literal notranslate"><span class="pre">get_cdutstag()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.get_cf"><code class="docutils literal notranslate"><span class="pre">get_cf()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.get_cfutstag"><code class="docutils literal notranslate"><span class="pre">get_cfutstag()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.get_cfxt"><code class="docutils literal notranslate"><span class="pre">get_cfxt()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.get_cp"><code class="docutils literal notranslate"><span class="pre">get_cp()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.get_cteq"><code class="docutils literal notranslate"><span class="pre">get_cteq()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.get_cttr"><code class="docutils literal notranslate"><span class="pre">get_cttr()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.get_damp"><code class="docutils literal notranslate"><span class="pre">get_damp()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.get_de"><code class="docutils literal notranslate"><span class="pre">get_de()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.get_distributions"><code class="docutils literal notranslate"><span class="pre">get_distributions()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.get_rho"><code class="docutils literal notranslate"><span class="pre">get_rho()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.get_ueinv"><code class="docutils literal notranslate"><span class="pre">get_ueinv()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.get_ueinvref"><code class="docutils literal notranslate"><span class="pre">get_ueinvref()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.get_uk"><code class="docutils literal notranslate"><span class="pre">get_uk()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.get_upw"><code class="docutils literal notranslate"><span class="pre">get_upw()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.get_uq"><code class="docutils literal notranslate"><span class="pre">get_uq()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.identify_surfaces"><code class="docutils literal notranslate"><span class="pre">identify_surfaces()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.init_boundary_layer"><code class="docutils literal notranslate"><span class="pre">init_boundary_layer()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.init_thermo"><code class="docutils literal notranslate"><span class="pre">init_thermo()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.inviscid_velocity"><code class="docutils literal notranslate"><span class="pre">inviscid_velocity()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.make_panels"><code class="docutils literal notranslate"><span class="pre">make_panels()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.march_amplification"><code class="docutils literal notranslate"><span class="pre">march_amplification()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.mfoil"><code class="docutils literal notranslate"><span class="pre">mfoil</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.mfoil.geom_addcamber"><code class="docutils literal notranslate"><span class="pre">mfoil.geom_addcamber()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.mfoil.geom_derotate"><code class="docutils literal notranslate"><span class="pre">mfoil.geom_derotate()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.mfoil.geom_flap"><code class="docutils literal notranslate"><span class="pre">mfoil.geom_flap()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.mfoil.ping"><code class="docutils literal notranslate"><span class="pre">mfoil.ping()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.mfoil.setoper"><code class="docutils literal notranslate"><span class="pre">mfoil.setoper()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.mfoil.solve"><code class="docutils literal notranslate"><span class="pre">mfoil.solve()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.mgeom_addcamber"><code class="docutils literal notranslate"><span class="pre">mgeom_addcamber()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.mgeom_derotate"><code class="docutils literal notranslate"><span class="pre">mgeom_derotate()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.mgeom_flap"><code class="docutils literal notranslate"><span class="pre">mgeom_flap()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.mplot_boundary_layer"><code class="docutils literal notranslate"><span class="pre">mplot_boundary_layer()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.naca_points"><code class="docutils literal notranslate"><span class="pre">naca_points()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.norm2"><code class="docutils literal notranslate"><span class="pre">norm2()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.panel_constsource_stream"><code class="docutils literal notranslate"><span class="pre">panel_constsource_stream()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.panel_constsource_velocity"><code class="docutils literal notranslate"><span class="pre">panel_constsource_velocity()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.panel_info"><code class="docutils literal notranslate"><span class="pre">panel_info()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.panel_linsource_stream"><code class="docutils literal notranslate"><span class="pre">panel_linsource_stream()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.panel_linsource_velocity"><code class="docutils literal notranslate"><span class="pre">panel_linsource_velocity()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.panel_linvortex_stream"><code class="docutils literal notranslate"><span class="pre">panel_linvortex_stream()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.panel_linvortex_velocity"><code class="docutils literal notranslate"><span class="pre">panel_linvortex_velocity()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.ping_test"><code class="docutils literal notranslate"><span class="pre">ping_test()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.plot_airfoil"><code class="docutils literal notranslate"><span class="pre">plot_airfoil()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.plot_cpplus"><code class="docutils literal notranslate"><span class="pre">plot_cpplus()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.plot_results"><code class="docutils literal notranslate"><span class="pre">plot_results()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.quadseg"><code class="docutils literal notranslate"><span class="pre">quadseg()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.rebuild_isol"><code class="docutils literal notranslate"><span class="pre">rebuild_isol()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.rebuild_ue_m"><code class="docutils literal notranslate"><span class="pre">rebuild_ue_m()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.residual_station"><code class="docutils literal notranslate"><span class="pre">residual_station()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.residual_transition"><code class="docutils literal notranslate"><span class="pre">residual_transition()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.set_coords"><code class="docutils literal notranslate"><span class="pre">set_coords()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.set_wake_gap"><code class="docutils literal notranslate"><span class="pre">set_wake_gap()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.sind"><code class="docutils literal notranslate"><span class="pre">sind()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.solve_coupled"><code class="docutils literal notranslate"><span class="pre">solve_coupled()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.solve_glob"><code class="docutils literal notranslate"><span class="pre">solve_glob()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.solve_inviscid"><code class="docutils literal notranslate"><span class="pre">solve_inviscid()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.solve_viscous"><code class="docutils literal notranslate"><span class="pre">solve_viscous()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.space_geom"><code class="docutils literal notranslate"><span class="pre">space_geom()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.spline2d"><code class="docutils literal notranslate"><span class="pre">spline2d()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.spline_curvature"><code class="docutils literal notranslate"><span class="pre">spline_curvature()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.splinetan"><code class="docutils literal notranslate"><span class="pre">splinetan()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.splineval"><code class="docutils literal notranslate"><span class="pre">splineval()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.stagnation_state"><code class="docutils literal notranslate"><span class="pre">stagnation_state()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.stagpoint_find"><code class="docutils literal notranslate"><span class="pre">stagpoint_find()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.stagpoint_move"><code class="docutils literal notranslate"><span class="pre">stagpoint_move()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.station_param"><code class="docutils literal notranslate"><span class="pre">station_param()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.store_transition"><code class="docutils literal notranslate"><span class="pre">store_transition()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.thwaites_init"><code class="docutils literal notranslate"><span class="pre">thwaites_init()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.update_state"><code class="docutils literal notranslate"><span class="pre">update_state()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.update_transition"><code class="docutils literal notranslate"><span class="pre">update_transition()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.upwind"><code class="docutils literal notranslate"><span class="pre">upwind()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.vprint"><code class="docutils literal notranslate"><span class="pre">vprint()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.wake_init"><code class="docutils literal notranslate"><span class="pre">wake_init()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil.wake_sys"><code class="docutils literal notranslate"><span class="pre">wake_sys()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pymfoil.html#module-pymfoil.mfoil_notex">pymfoil.mfoil_notex module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.Geom"><code class="docutils literal notranslate"><span class="pre">Geom</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.Glob"><code class="docutils literal notranslate"><span class="pre">Glob</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.Isol"><code class="docutils literal notranslate"><span class="pre">Isol</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.Oper"><code class="docutils literal notranslate"><span class="pre">Oper</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.Panel"><code class="docutils literal notranslate"><span class="pre">Panel</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.Param"><code class="docutils literal notranslate"><span class="pre">Param</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.Post"><code class="docutils literal notranslate"><span class="pre">Post</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.TE_info"><code class="docutils literal notranslate"><span class="pre">TE_info()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.Vsol"><code class="docutils literal notranslate"><span class="pre">Vsol</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.atan2"><code class="docutils literal notranslate"><span class="pre">atan2()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.build_gamma"><code class="docutils literal notranslate"><span class="pre">build_gamma()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.build_glob_sys"><code class="docutils literal notranslate"><span class="pre">build_glob_sys()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.build_param"><code class="docutils literal notranslate"><span class="pre">build_param()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.build_wake"><code class="docutils literal notranslate"><span class="pre">build_wake()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.calc_force"><code class="docutils literal notranslate"><span class="pre">calc_force()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.calc_ue_m"><code class="docutils literal notranslate"><span class="pre">calc_ue_m()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.check_ping"><code class="docutils literal notranslate"><span class="pre">check_ping()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.clalpha_residual"><code class="docutils literal notranslate"><span class="pre">clalpha_residual()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.clear_solution"><code class="docutils literal notranslate"><span class="pre">clear_solution()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.cosd"><code class="docutils literal notranslate"><span class="pre">cosd()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.dist"><code class="docutils literal notranslate"><span class="pre">dist()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.get_H"><code class="docutils literal notranslate"><span class="pre">get_H()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.get_Hk"><code class="docutils literal notranslate"><span class="pre">get_Hk()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.get_Hs"><code class="docutils literal notranslate"><span class="pre">get_Hs()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.get_Hss"><code class="docutils literal notranslate"><span class="pre">get_Hss()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.get_Hw"><code class="docutils literal notranslate"><span class="pre">get_Hw()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.get_Mach2"><code class="docutils literal notranslate"><span class="pre">get_Mach2()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.get_Ret"><code class="docutils literal notranslate"><span class="pre">get_Ret()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.get_Us"><code class="docutils literal notranslate"><span class="pre">get_Us()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.get_cDi"><code class="docutils literal notranslate"><span class="pre">get_cDi()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.get_cDi_lam"><code class="docutils literal notranslate"><span class="pre">get_cDi_lam()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.get_cDi_lamstress"><code class="docutils literal notranslate"><span class="pre">get_cDi_lamstress()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.get_cDi_lamwake"><code class="docutils literal notranslate"><span class="pre">get_cDi_lamwake()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.get_cDi_outer"><code class="docutils literal notranslate"><span class="pre">get_cDi_outer()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.get_cDi_turbwall"><code class="docutils literal notranslate"><span class="pre">get_cDi_turbwall()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.get_cDixt"><code class="docutils literal notranslate"><span class="pre">get_cDixt()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.get_cdutstag"><code class="docutils literal notranslate"><span class="pre">get_cdutstag()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.get_cf"><code class="docutils literal notranslate"><span class="pre">get_cf()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.get_cfutstag"><code class="docutils literal notranslate"><span class="pre">get_cfutstag()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.get_cfxt"><code class="docutils literal notranslate"><span class="pre">get_cfxt()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.get_cp"><code class="docutils literal notranslate"><span class="pre">get_cp()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.get_cteq"><code class="docutils literal notranslate"><span class="pre">get_cteq()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.get_cttr"><code class="docutils literal notranslate"><span class="pre">get_cttr()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.get_damp"><code class="docutils literal notranslate"><span class="pre">get_damp()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.get_de"><code class="docutils literal notranslate"><span class="pre">get_de()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.get_distributions"><code class="docutils literal notranslate"><span class="pre">get_distributions()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.get_rho"><code class="docutils literal notranslate"><span class="pre">get_rho()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.get_ueinv"><code class="docutils literal notranslate"><span class="pre">get_ueinv()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.get_ueinvref"><code class="docutils literal notranslate"><span class="pre">get_ueinvref()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.get_uk"><code class="docutils literal notranslate"><span class="pre">get_uk()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.get_upw"><code class="docutils literal notranslate"><span class="pre">get_upw()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.get_uq"><code class="docutils literal notranslate"><span class="pre">get_uq()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.identify_surfaces"><code class="docutils literal notranslate"><span class="pre">identify_surfaces()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.init_boundary_layer"><code class="docutils literal notranslate"><span class="pre">init_boundary_layer()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.init_thermo"><code class="docutils literal notranslate"><span class="pre">init_thermo()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.inviscid_velocity"><code class="docutils literal notranslate"><span class="pre">inviscid_velocity()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.make_panels"><code class="docutils literal notranslate"><span class="pre">make_panels()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.march_amplification"><code class="docutils literal notranslate"><span class="pre">march_amplification()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.mfoil"><code class="docutils literal notranslate"><span class="pre">mfoil</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.mfoil.geom_addcamber"><code class="docutils literal notranslate"><span class="pre">mfoil.geom_addcamber()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.mfoil.geom_derotate"><code class="docutils literal notranslate"><span class="pre">mfoil.geom_derotate()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.mfoil.geom_flap"><code class="docutils literal notranslate"><span class="pre">mfoil.geom_flap()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.mfoil.ping"><code class="docutils literal notranslate"><span class="pre">mfoil.ping()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.mfoil.setoper"><code class="docutils literal notranslate"><span class="pre">mfoil.setoper()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.mfoil.solve"><code class="docutils literal notranslate"><span class="pre">mfoil.solve()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.mgeom_addcamber"><code class="docutils literal notranslate"><span class="pre">mgeom_addcamber()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.mgeom_derotate"><code class="docutils literal notranslate"><span class="pre">mgeom_derotate()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.mgeom_flap"><code class="docutils literal notranslate"><span class="pre">mgeom_flap()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.mplot_boundary_layer"><code class="docutils literal notranslate"><span class="pre">mplot_boundary_layer()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.naca_points"><code class="docutils literal notranslate"><span class="pre">naca_points()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.norm2"><code class="docutils literal notranslate"><span class="pre">norm2()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.panel_constsource_stream"><code class="docutils literal notranslate"><span class="pre">panel_constsource_stream()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.panel_constsource_velocity"><code class="docutils literal notranslate"><span class="pre">panel_constsource_velocity()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.panel_info"><code class="docutils literal notranslate"><span class="pre">panel_info()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.panel_linsource_stream"><code class="docutils literal notranslate"><span class="pre">panel_linsource_stream()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.panel_linsource_velocity"><code class="docutils literal notranslate"><span class="pre">panel_linsource_velocity()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.panel_linvortex_stream"><code class="docutils literal notranslate"><span class="pre">panel_linvortex_stream()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.panel_linvortex_velocity"><code class="docutils literal notranslate"><span class="pre">panel_linvortex_velocity()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.ping_test"><code class="docutils literal notranslate"><span class="pre">ping_test()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.plot_airfoil"><code class="docutils literal notranslate"><span class="pre">plot_airfoil()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.plot_cpplus"><code class="docutils literal notranslate"><span class="pre">plot_cpplus()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.plot_results"><code class="docutils literal notranslate"><span class="pre">plot_results()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.quadseg"><code class="docutils literal notranslate"><span class="pre">quadseg()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.rebuild_isol"><code class="docutils literal notranslate"><span class="pre">rebuild_isol()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.rebuild_ue_m"><code class="docutils literal notranslate"><span class="pre">rebuild_ue_m()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.residual_station"><code class="docutils literal notranslate"><span class="pre">residual_station()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.residual_transition"><code class="docutils literal notranslate"><span class="pre">residual_transition()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.set_coords"><code class="docutils literal notranslate"><span class="pre">set_coords()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.set_wake_gap"><code class="docutils literal notranslate"><span class="pre">set_wake_gap()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.sind"><code class="docutils literal notranslate"><span class="pre">sind()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.solve_coupled"><code class="docutils literal notranslate"><span class="pre">solve_coupled()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.solve_glob"><code class="docutils literal notranslate"><span class="pre">solve_glob()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.solve_inviscid"><code class="docutils literal notranslate"><span class="pre">solve_inviscid()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.solve_viscous"><code class="docutils literal notranslate"><span class="pre">solve_viscous()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.space_geom"><code class="docutils literal notranslate"><span class="pre">space_geom()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.spline2d"><code class="docutils literal notranslate"><span class="pre">spline2d()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.spline_curvature"><code class="docutils literal notranslate"><span class="pre">spline_curvature()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.splinetan"><code class="docutils literal notranslate"><span class="pre">splinetan()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.splineval"><code class="docutils literal notranslate"><span class="pre">splineval()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.stagnation_state"><code class="docutils literal notranslate"><span class="pre">stagnation_state()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.stagpoint_find"><code class="docutils literal notranslate"><span class="pre">stagpoint_find()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.stagpoint_move"><code class="docutils literal notranslate"><span class="pre">stagpoint_move()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.station_param"><code class="docutils literal notranslate"><span class="pre">station_param()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.store_transition"><code class="docutils literal notranslate"><span class="pre">store_transition()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.thwaites_init"><code class="docutils literal notranslate"><span class="pre">thwaites_init()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.update_state"><code class="docutils literal notranslate"><span class="pre">update_state()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.update_transition"><code class="docutils literal notranslate"><span class="pre">update_transition()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.upwind"><code class="docutils literal notranslate"><span class="pre">upwind()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.vprint"><code class="docutils literal notranslate"><span class="pre">vprint()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.wake_init"><code class="docutils literal notranslate"><span class="pre">wake_init()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pymfoil.html#pymfoil.mfoil_notex.wake_sys"><code class="docutils literal notranslate"><span class="pre">wake_sys()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pymfoil.html#module-pymfoil">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<p>Work in progress.</p>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">pymfoil</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scope_workflow/index.html">Scope and Workflows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">API Reference</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">pymfoil</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pymfoil.html">pymfoil package</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pymfoil.html">pymfoil package</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="index.html">API Reference</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">API Reference</a></li>
+      <li>Next: <a href="pymfoil.html" title="next chapter">pymfoil package</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2025, Nikolaos Papadakis.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.2.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="../_sources/api/modules.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
