@@ -1,10 +1,15 @@
-name: Deploy Documentation
+
+name: Deploy Documentation to GitHub Pages
 
 on:
   push:
     branches:
-      - main  # Replace with your default branch if it's not 'main'
-      - develop 
+      - main # Replace with your default branch if it's not 'main'
+      - develop
+
+# BEST PRACTICE: Specify permissions for the GITHUB_TOKEN to ensure the workflow is secure.
+permissions:
+  contents: write # Allows the action to push to the gh-pages branch.
 
 jobs:
   build-and-deploy:
@@ -12,21 +17,26 @@ jobs:
 
     steps:
       - name: Check Out Repository
-        uses: actions/checkout@v3  # Update to v3
-        with:
-          node-version: '20'
+        # Use the latest version of the action
+        uses: actions/checkout@v4
+        # CORRECTED: Removed the 'with' block containing 'node-version' as it's not a valid input for this action.
+        # with:
+        #   node-version: '20'
+
 
       - name: Set up Python
-        uses: actions/setup-python@v4  # Update to v4
+        # Use the latest version of the action
+        uses: actions/setup-python@v5
         with:
           python-version: '3.x'
 
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install sphinx
-          pip install sphinxcontrib-mermaid
-          pip install -e src/.  # Installs the package in editable mode from the root
+          # BEST PRACTICE: It's recommended to have a requirements.txt for your docs
+          # For example: pip install -r docs/requirements.txt
+          pip install sphinx sphinxcontrib-mermaid
+          pip install -e . # Installs the package from the root pyproject.toml or setup.py
 
       - name: Build Documentation
         run: |
