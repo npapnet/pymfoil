@@ -1,4 +1,4 @@
-MFOIL Documentation
+Scope and Workflows
 ===================
 
 .. toctree::
